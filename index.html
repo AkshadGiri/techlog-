@@ -2,10 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink - Blood Donor Connect</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="yahoo"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/684/684072.png" alt="LifeLink Logo">
+                <h1>LifeLink</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#" id="loginBtn">Login</a>
+                <a href="#" id="registerBtn">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Connect Life-Saving Heroes</h2>
+                <p>Bridging the gap between blood donors and hospitals</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <h3>Find Blood Donors</h3>
+                    <input type="text" placeholder="Enter blood group or location">
+                    <button>Search Donors</button>
+                </div>
+                <div class="search-box">
+                    <h3>Find Hospitals</h3>
+                    <input type="text" placeholder="Enter hospital name or location">
+                    <button>Search Hospitals</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="hospital-list">
+            <h2>Registered Hospitals</h2>
+            <div class="hospitals-container">
+                <!-- Hospital cards will be added dynamically with JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <select required>
+                    <option value="">Select Type</option>
+                    <option value="donor">Donor</option>
+                    <option value="hospital">Hospital</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
