@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>, initial-scale=1.0">
-    <title>Blood Donor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink - Blood Donor Connect</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <header>
@@ -37,7 +38,20 @@
                 </div>
                 <div class="search-box">
                     <h3>Find Hospitals</h3>
-                    <input type="text" placeholder="Enter hospital name or location">
+                    <select name="hospitals" id="hospitals">
+                        <option value="">Select hospital</option>
+                        <option value="aiims_nagpur">All India Institute of Medical Sciences (AIIMS), Nagpur</option>
+                        <option value="government_medical_college">Government Medical College and Hospital, Nagpur</option>
+                        <option value="indira_gandhi_medical_college">Indira Gandhi Government Medical College, Nagpur</option>
+                        <option value="lata_mangeshkar_hospital">Lata Mangeshkar Hospital (N.K.P. Salve Institute of Medical Sciences), Nagpur</option>
+                        <option value="wockhardt_hospital">Wockhardt Super Specialty Hospital, Nagpur</option>
+                        <option value="orange_city_hospital">Orange City Hospital & Research Institute</option>
+                        <option value="kingsway_hospital">Kingsway Hospital</option>
+                        <option value="krims_hospital">KRIMS Hospitals</option>
+                        <option value="meditrina_institute">Meditrina Institute of Medical Sciences</option>
+                        <option value="alexis_hospital">Alexis Multispecialty Hospital</option>
+                    </select>
+                    
                     <button>Search Hospitals</button>
                 </div>
             </div>
@@ -82,7 +96,56 @@
             </form>
         </div>
     </div>
+    
+    <section class="hospital-list">
+        <div class="emergency-header">
+            <h2><a href="apply.html">Emergency Blood Requirements</a></h2>
+            <div class="emergency-pulse"></div>
+        </div>
+        <div class="hospitals-container">
+            <!-- Hospital cards will be added dynamically with JavaScript -->
+        </div>
+    </section>
+        <section class="hospital-list">
+            <div class="emergency-header">
+              
+        
+            </div>
+            <div class="hospitals-container">
+                <!-- Hospital cards will be added dynamically with JavaScript -->
+            </div>
+        </section>
+        <a href="history.html"><button class="butt">Donation History</button></a>
 
-    <script src="script.js"></script>
+        <section class="about-us">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>About LifeLink</h2>
+                    <p>We are dedicated to creating a seamless connection between blood donors and healthcare facilities, saving lives one donation at a time.</p>
+                    <div class="stats-container">
+                        <div class="stat-box">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Donors Registered</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Partner Hospitals</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">15,000+</span>
+                            <span class="stat-label">Lives Saved</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://img.freepik.com/free-vector/blood-donation-abstract-concept-illustration_335657-1897.jpg" alt="Blood Donation Illustration">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ... existing modal code ... -->
+
+    <script src="home.js"></script>
 </body>
 </html>
