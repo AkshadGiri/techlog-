@@ -152,7 +152,18 @@
     cursor: pointer;
     padding:10px
 }
-
+.butt{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
 .modal-content form {
     display: flex;
     flex-direction: column;
@@ -191,13 +202,7 @@
     letter-spacing: 1px;
 }
 
-.emergency-pulse {
-    width: 20px;
-    height: 20px;
-    background-color: #e74c3c;
-    border-radius: 50%;
-    animation: pulse 1.5s ease-in-out infinite;
-}
+
 
 @keyframes pulse {
     0% {
